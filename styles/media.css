@@ -6,7 +6,6 @@
     justify-content: space-evenly;
     gap: 3rem;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -16,7 +15,7 @@
 
   .title {
     font-size: 3.6rem;
-   padding-left: 1.2rem;
+    padding-left: 1.2rem;
   }
 
   .form__title {
@@ -40,14 +39,14 @@
     font-size: 1.6rem;
   }
 
-  .cart__shipping p:not(:last-child), .cart__total p:not(:last-child){
+  .cart__shipping p:not(:last-child),
+  .cart__total p:not(:last-child) {
     font-size: 1.8rem;
   }
 }
 
-@media screen and (min-width: 1329px){
-    .title{
-      padding-left: 12rem; 
-    }
-
+@media screen and (min-width: 1329px) {
+  .title {
+    padding-left: 12rem;
+  }
 }
