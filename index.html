@@ -22,158 +22,166 @@
     ></script>
 
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
       <h1 class="title">Checkout</h1>
 
-      <section class="cart">
-        <div class="cart__product">
-          <div class="cart__image">
-            <img src="img/photo1.png" alt="Backbag" />
-          </div>
-          <div class="cart__info">
-            <p class="card__text">Vintage Backbag</p>
-            <div class="cart__price">
-              <p>$54.99</p>
-              <p>$94.99</p>
+      <div class="page">
+        <section class="cart">
+          <div class="cart__product">
+            <div class="cart__image">
+              <img src="img/photo1.png" alt="Backbag" />
             </div>
-            <div class="cart__quantity">
-              <button class="btn__minus">
-                <i class="fa-solid fa-minus cart__icon"></i>
-              </button>
-              <p>1</p>
-              <button class="btn__plus">
-                <i class="fa-solid fa-plus cart__icon"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="cart__product">
-          <div class="cart__image">
-            <img src="img/photo2.png" alt="Levi Shoes" />
-          </div>
-          <div class="cart__info">
-            <p class="card__text">Levi Shoes</p>
-            <div class="cart__price">
-              <p>$74.99</p>
-              <p>$124.99</p>
-            </div>
-            <div class="cart__quantity">
-              <button class="btn__minus">
-                <i class="fa-solid fa-minus cart__icon"></i>
-              </button>
-              <p>1</p>
-              <button class="btn__plus">
-                <i class="fa-solid fa-plus cart__icon"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="cart__amount">
-          <div class="cart__shipping">
-            <p>Shipping</p>
-            <p>$19</p>
-          </div>
-          <div class="cart__total">
-            <p>Total</p>
-            <p>$148.98</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="form">
-        <form action="#" class="form__cta">
-          <div class="form__contact">
-            <h2 class="form__title">Contact infomation</h2>
-            <label for="email">E-mail</label>
-            <div class="form__input">
-              <i class="fa-solid fa-envelope form__icon"></i>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email..."
-                required
-              />
-            </div>
-
-            <label for="phone">Phone</label>
-            <div class="form__input">
-              <i class="fa-solid fa-phone form__icon"></i>
-              <input
-                type="tel"
-                id="phone"
-                placeholder="Enter your phone..."
-                required
-              />
-            </div>
-          </div>
-
-          <div class="form__shipping">
-            <h2 class="form__title">Shipping address</h2>
-
-            <label for="name">Full Name</label>
-            <div class="form__input">
-              <i class="fa-solid fa-user form__icon"></i>
-              <input
-                type="text"
-                id="name"
-                placeholder="Rodney Cotton"
-                required
-              />
-            </div>
-
-            <label for="address">Adress</label>
-            <div class="form__input">
-              <i class="fa-solid fa-house form__icon"></i>
-              <input
-                type="text"
-                id="address"
-                placeholder="Your address.."
-                required
-              />
-            </div>
-
-            <label for="city">City</label>
-            <div class="form__input">
-              <i class="fa-solid fa-city form__icon"></i>
-              <input type="text" id="city" placeholder="Your city.." required />
-            </div>
-
-            <div class="form__postal-country">
-              <div>
-                <label for="country">Country</label>
-                <div class="form__input">
-                  <i class="fa-solid fa-earth-americas form__icon"></i>
-                  <select name="country" id="country" required>
-                    <option value="country">Your country...</option>
-                    <option value="Brazil">Brazil</option>
-                    <option value="England">England</option>
-                    <option value="France">France</option>
-                  </select>
-                </div>
+            <div class="cart__info">
+              <p class="card__text">Vintage Backbag</p>
+              <div class="cart__price">
+                <p>$54.99</p>
+                <p>$94.99</p>
               </div>
-
-              <div>
-                <label for="postal">Postal Code</label>
-                <div class="form__input">
-                  <i class="fa-solid fa-truck-fast form__icon"></i>
-                  <input
-                    type="text"
-                    id="postal"
-                    placeholder="Your postal code.."
-                    required
-                  />
-                </div>
+              <div class="cart__quantity">
+                <button class="btn__minus">
+                  <i class="fa-solid fa-minus cart__icon"></i>
+                </button>
+                <p>1</p>
+                <button class="btn__plus">
+                  <i class="fa-solid fa-plus cart__icon"></i>
+                </button>
               </div>
             </div>
           </div>
-          <input type="submit" value="Continue" class="form__btn-submit"/>
-        </form>
-      </section>
+
+          <div class="cart__product">
+            <div class="cart__image">
+              <img src="img/photo2.png" alt="Levi Shoes" />
+            </div>
+            <div class="cart__info">
+              <p class="card__text">Levi Shoes</p>
+              <div class="cart__price">
+                <p>$74.99</p>
+                <p>$124.99</p>
+              </div>
+              <div class="cart__quantity">
+                <button class="btn__minus">
+                  <i class="fa-solid fa-minus cart__icon"></i>
+                </button>
+                <p>1</p>
+                <button class="btn__plus">
+                  <i class="fa-solid fa-plus cart__icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__amount">
+            <div class="cart__shipping">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div class="cart__total">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="form">
+          <form action="#" class="form__cta">
+            <div class="form__contact">
+              <h2 class="form__title">Contact infomation</h2>
+              <label for="email">E-mail</label>
+              <div class="form__input">
+                <i class="fa-solid fa-envelope form__icon"></i>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email..."
+                  required
+                />
+              </div>
+
+              <label for="phone">Phone</label>
+              <div class="form__input">
+                <i class="fa-solid fa-phone form__icon"></i>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form__shipping">
+              <h2 class="form__title">Shipping address</h2>
+
+              <label for="name">Full Name</label>
+              <div class="form__input">
+                <i class="fa-solid fa-user form__icon"></i>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Rodney Cotton"
+                  required
+                />
+              </div>
+
+              <label for="address">Adress</label>
+              <div class="form__input">
+                <i class="fa-solid fa-house form__icon"></i>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Your address.."
+                  required
+                />
+              </div>
+
+              <label for="city">City</label>
+              <div class="form__input">
+                <i class="fa-solid fa-city form__icon"></i>
+                <input
+                  type="text"
+                  id="city"
+                  placeholder="Your city.."
+                  required
+                />
+              </div>
+
+              <div class="form__postal-country">
+                <div>
+                  <label for="country">Country</label>
+                  <div class="form__input">
+                    <i class="fa-solid fa-earth-americas form__icon"></i>
+                    <select name="country" id="country" required>
+                      <option value="country">Your country...</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="England">England</option>
+                      <option value="France">France</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="postal">Postal Code</label>
+                  <div class="form__input">
+                    <i class="fa-solid fa-truck-fast form__icon"></i>
+                    <input
+                      type="text"
+                      id="postal"
+                      placeholder="Your postal code.."
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="submit" value="Continue" class="form__btn-submit" />
+          </form>
+        </section>
+      </div>
     </main>
   </body>
 </html>
