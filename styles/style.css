@@ -33,6 +33,7 @@ body {
   padding: 1.8rem 0;
 }
 
+/* CART */
 .cart {
   border-radius: 12px;
   background-color: var(--grey-4);
@@ -85,14 +86,16 @@ body {
   font-size: 1.6rem;
 }
 
-.btn {
+.btn__plus,
+.btn__minus {
   background-color: var(--grey-3);
   border: none;
   padding: 0.4rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.fa-solid {
+.cart__icon {
   color: var(--grey-2);
 }
 
@@ -108,4 +111,82 @@ body {
   color: var(--grey-5);
   border-top: 1px solid var(--grey-6);
   padding: 1rem 0;
+}
+
+/* FORM */
+.form {
+  margin-top: 3.8rem;
+}
+
+.form__contact {
+  margin-bottom: 3.8rem;
+}
+
+.form__title {
+  font-size: 1.4rem;
+  color: var(--grey-5);
+  padding-bottom: 1rem;
+}
+
+.form__input {
+  border: 1px solid var(--grey-2);
+  border-radius: 12px;
+  padding: 1.2rem 0.8rem;
+  margin: 0.4rem 0 1.2rem 0;
+}
+
+.form__input input,
+select {
+  width: 90%;
+  border: none;
+  color: var(--grey-5);
+  font-family: inherit;
+}
+
+.form__input input::placeholder,
+select {
+  color: var(--grey-2);
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+#name::placeholder {
+  color: var(--grey-5);
+}
+
+.form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba(253, 242, 233, 0.637);
+}
+
+.form__icon {
+  font-size: 1.4rem;
+  color: var(--grey-2);
+  padding-right: 0.8rem;
+}
+
+.form__postal-country {
+  display: flex;
+  gap: 2rem;
+}
+
+.form__postal-country div {
+  width: 100%;
+}
+
+.form__postal-country .form__input {
+  display: flex;
+  align-items: center;
+}
+
+.form__btn-submit {
+  padding: 1.4rem 3.6rem;
+  font-family: inherit;
+  border: none;
+  background-color: var(--orange);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1.8rem;
 }
